@@ -36,7 +36,3 @@ _*.py
 # IDE
 .idea/
 .vscode/
-*.code-workspace
-
-# Parquet caches (CSV exports are kept in compiled/)
-*.parquet
