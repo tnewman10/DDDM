@@ -1,0 +1,2 @@
+1.0.0 2026-09-01
+  - Initial release of the resting-state EEG dataset, including EEG recordings, participant demographics, clinical measures, and BIDS metadata.

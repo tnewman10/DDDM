@@ -1,0 +1,4 @@
+session_id	age_at_visit	moca	updrs_part_iii	disease_duration	levodopa_equivalent_daily_dose	state	acq_date	days_since_first_session
+ses-01	65	26	4	0.7	600	EO	2010-07-31	0
+ses-02	66	n/a	n/a	n/a	n/a	EO	2011-10-04	430
+ses-03	68	n/a	n/a	n/a	n/a	EO	2012-12-15	868

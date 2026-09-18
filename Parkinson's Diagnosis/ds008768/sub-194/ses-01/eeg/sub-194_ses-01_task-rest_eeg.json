@@ -1,0 +1,14 @@
+{
+  "TaskName": "rest",
+  "SamplingFrequency": 500,
+  "EEGReference": "Pz",
+  "PowerLineFrequency": "n/a",
+  "SoftwareFilters": "n/a",
+  "RecordingType": "continuous",
+  "EEGChannelCount": 63,
+  "EOGChannelCount": 0,
+  "ECGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "EEGPlacementScheme": "10-20"
+}

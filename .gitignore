@@ -1,0 +1,42 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Nested git repositories (OpenNeuro / upstream clones)
+**/.git/
+**/.git_backup/
+
+# Large EEG waveform files — download ds008768 from OpenNeuro separately
+*.eeg
+
+# Local dev / scratch scripts
+patch_*.py
+_*.py
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Parquet caches (CSV exports are kept in compiled/)
+*.parquet

@@ -1,0 +1,30 @@
+{
+    "Name": "Resting-State EEG in Parkinson's Disease and Healthy Controls",
+    "BIDSVersion": "1.11.1",
+    "DatasetType": "raw",
+    "License": "CC0",
+    "Authors": [
+        "Brooke Yeager",
+        "Arturo Espinoza",
+        "Rachel Cole",
+        "Christina Weber",
+        "Ergun Uc",
+        "James Cavanagh",
+        "Nandakumar Narayanan"
+    ],
+    "Keywords": [
+        "EEG",
+        "resting-state EEG",
+        "Parkinson's disease",
+        "healthy controls",
+        "electroencephalography",
+        "neuroscience"
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "BIDS conversion and curation",
+            "Description": "Conversion and curation of existing BrainVision resting-state EEG recordings and associated participant and session metadata into BIDS format."
+        }
+    ],
+    "DatasetDOI": "doi:10.18112/openneuro.ds008768.v1.0.0"
+}

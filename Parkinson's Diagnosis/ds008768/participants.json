@@ -1,0 +1,32 @@
+{
+  "participant_id": {
+    "Description": "Unique de-identified participant identifier."
+  },
+  "age": {
+    "Description": "Age in years at the participant's first recorded resting-state EEG session."
+  },
+  "sex": {
+    "Description": "Sex assigned/reported in the source dataset.",
+    "Levels": {
+      "F": "Female",
+      "M": "Male"
+    }
+  },
+  "education": {
+    "Description": "Years of formal education."
+  },
+  "race": {
+    "Description": "Race as recorded in the source dataset.",
+    "Levels": {
+      "White": "White/Caucasian",
+      "Asian": "Asian"
+    }
+  },
+  "group": {
+    "Description": "Participant study group.",
+    "Levels": {
+      "Control": "Healthy control participant",
+      "PD": "Participant with Parkinson's disease"
+    }
+  }
+}

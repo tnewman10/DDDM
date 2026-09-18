@@ -1,0 +1,38 @@
+{
+  "session_id": {
+    "Description": "Unique identifier for each session within a participant. Sessions are numbered chronologically by acquisition date."
+  },
+  "age_at_visit": {
+    "Description": "Age of the participant in years at the time of the resting-state EEG session.",
+    "Units": "years"
+  },
+  "moca": {
+    "Description": "Montreal Cognitive Assessment (MoCA) score at the time of the session.",
+    "Units": "points"
+  },
+  "updrs_part_iii": {
+    "Description": "Unified Parkinson's Disease Rating Scale Part III (UPDRS-III) motor examination score at the time of the session.",
+    "Units": "points"
+  },
+  "disease_duration": {
+    "Description": "Duration of Parkinson's disease at the time of the session.",
+    "Units": "years"
+  },
+  "levodopa_equivalent_daily_dose": {
+    "Description": "Levodopa equivalent daily dose (LEDD) at the time of the session.",
+    "Units": "mg/day"
+  },
+  "state": {
+    "Description": "Participant state during the resting-state EEG recording.",
+    "Levels": {
+      "EO": "Eyes open"
+    }
+  },
+  "acq_date": {
+    "Description": "De-identified acquisition date for the resting-state EEG session. Dates have been altered to protect participant privacy while preserving the exact intervals between sessions within each participant."
+  },
+  "days_since_first_session": {
+    "Description": "Number of days elapsed since the participant's first resting-state EEG session.",
+    "Units": "days"
+  }
+}
