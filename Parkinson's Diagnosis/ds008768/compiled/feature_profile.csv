@@ -1,5 +1,4 @@
 feature,data_type,measurement_level,count,missing,pct_missing,mean,median,mode,min,max,range,std_dev,skew,n_outliers_iqr
-group_label,int64,ratio,358,0,0.0,0.67,1.0,1.0,0.0,1.0,1.0,0.47,-0.73,0
 age_at_first_session,float64,ratio,358,0,0.0,68.67,69.0,70.0,40.0,92.5,52.5,8.76,-0.5,14
 education,float64,ratio,252,106,29.6,16.52,16.0,16.0,11.0,32.0,21.0,3.0,0.78,3
 age_at_visit,float64,ratio,358,0,0.0,69.0,69.0,68.0,40.0,92.5,52.5,8.89,-0.48,13
@@ -25,14 +24,20 @@ eeg_filt_beta_rel,float64,ratio,266,92,25.7,0.19,0.17,0.11915237464426164,0.03,0
 eeg_voltage_n_samples,float64,ratio,266,92,25.7,130864.26,91005.0,62500.0,60280.0,358885.0,298605.0,90689.67,1.64,33
 eeg_voltage_n_channels,float64,ratio,266,92,25.7,63.14,63.0,63.0,63.0,66.0,3.0,0.37,3.21,0
 eeg_filt_effective_sfreq_hz,float64,ratio,266,92,25.7,669.24,500.0,500.0,500.0,1923.08,1423.08,452.63,2.33,0
-group_Control,int64,nominal,358,0,0.0,0.33,0.0,0.0,0.0,1.0,1.0,0.47,,
-group_PD,int64,nominal,358,0,0.0,0.67,1.0,1.0,0.0,1.0,1.0,0.47,,
-group_nan,int64,nominal,358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
-sex_F,int64,nominal,358,0,0.0,0.38,0.0,0.0,0.0,1.0,1.0,0.49,,
-sex_M,int64,nominal,358,0,0.0,0.62,1.0,1.0,0.0,1.0,1.0,0.49,,
-sex_nan,int64,nominal,358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
-race_Asian,int64,nominal,358,0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.05,,
-race_White,int64,nominal,358,0,0.0,0.13,0.0,0.0,0.0,1.0,1.0,0.34,,
-race_nan,int64,nominal,358,0,0.0,0.87,1.0,1.0,0.0,1.0,1.0,0.34,,
-state_EO,int64,nominal,358,0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,,
-state_nan,int64,nominal,358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
+group_Control,int64,nominal (binary indicator),358,0,0.0,0.33,0.0,0.0,0.0,1.0,1.0,0.47,,
+group_PD,int64,nominal (binary indicator),358,0,0.0,0.67,1.0,1.0,0.0,1.0,1.0,0.47,,
+group_nan,int64,nominal (binary indicator),358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
+sex_F,int64,nominal (binary indicator),358,0,0.0,0.38,0.0,0.0,0.0,1.0,1.0,0.49,,
+sex_M,int64,nominal (binary indicator),358,0,0.0,0.62,1.0,1.0,0.0,1.0,1.0,0.49,,
+sex_nan,int64,nominal (binary indicator),358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
+race_Asian,int64,nominal (binary indicator),358,0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.05,,
+race_White,int64,nominal (binary indicator),358,0,0.0,0.13,0.0,0.0,0.0,1.0,1.0,0.34,,
+race_nan,int64,nominal (binary indicator),358,0,0.0,0.87,1.0,1.0,0.0,1.0,1.0,0.34,,
+state_EO,int64,nominal (binary indicator),358,0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,,
+state_nan,int64,nominal (binary indicator),358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
+eeg_reference_Pz,int64,nominal (binary indicator),358,0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,,
+eeg_reference_nan,int64,nominal (binary indicator),358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
+recording_type_continuous,int64,nominal (binary indicator),358,0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,,
+recording_type_nan,int64,nominal (binary indicator),358,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
+binary_format_IEEE_FLOAT_32,int64,nominal (binary indicator),358,0,0.0,0.75,1.0,1.0,0.0,1.0,1.0,0.44,,
+binary_format_nan,int64,nominal (binary indicator),358,0,0.0,0.25,0.0,0.0,0.0,1.0,1.0,0.44,,
