@@ -1,0 +1,802 @@
+[
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 1,
+    "score": 1.0,
+    "text": "Artificial intelligence (AI) offers incredible possibilities for patient care, but raises\nsignificant ethical issues, such as the potential for bias. Powerful ethical\nframeworks exist to minimize these issues, but are often developed for academic\nor regulatory environments and tend to be comprehensive but overly\nprescriptive, making them difficult to operationalize within fast-paced,\nresource-constrained environments. We introduce the Scalable Agile Framework\nfor Execution in AI (SAFE-AI) designed to balance ethical rigor with business\npriorities by embedding ethical oversight into standard Agile-based product\ndevelopment workflows. The framework emphasizes the early establishment of\ntestable acceptance criteria, fairness metrics, and transparency metrics to\nmanage model uncertainty, while also promoting continuous monitoring and\nre-evaluation of these metrics across the AI lifecycle. A core component of this\nframework are responsibility metrics using scenario-based probability analogy\nmapping designed to enhance transparency and stakeholder trust. This ensures\nthat retraining or tuning activities are subject to lightweight but meaningful ethical\nreview. By focusing on the minimum necessary requirements for responsible\ndevelopment, our framework offers a scalable, business-aligned approach to\nethical AI suitable for organizations without dedicated ethics teams."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 4,
+    "score": 1.0,
+    "text": "Framework creation unfolded over 20 weeks (January\u2013May 2025) through an Agile,\ndesign-thinking cycle:\n1. Initial workshop (2 h): a structured needs-finding session with MTN\u2019s data-science\nteam established pain points and success criteria.\n2. Weekly design meetings (1 h each): one MTN executive, three DSA AI-ethics\nresearchers, one Nemsee consultant, and one University of Utah professor met to\nprototype, critique, and refine SAFE-AI artifacts.\n3. Embedded expertise: DSA working group itself functioned as a collective body of\ndomain and data science expertise, drawing on extensive project experience across\nhealthcare, industry, and public-sector AI deployments. This structure enabled ongoing\ninput from practitioners without the need for separate interview protocols, allowing\ndesign insights to emerge continuously through direct participation.\n4. Documentation: meetings were recorded on Zoom; transcripts were summarised by an"
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 5,
+    "score": 1.0,
+    "text": "We present the Scalable Agile Framework for Execution in AI (SAFE-AI) - a structured process\ndesigned to embed ethical evaluation into the technical development lifecycle of AI products\n(summary in Fig. 1, full process in Fig. 2). SAFE-AI enters the workflow after user stories,\nbusiness requirements, or system objectives have been defined and prioritized, and tasks are\nready for execution by the development team. It complements Agile and Scrum methodologies\nby introducing structured ethical oversight at critical stages without disrupting project\nmomentum."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 7,
+    "score": 1.0,
+    "text": "A comprehensive regulatory review should be conducted before any AI development begins. If\nspecific handling techniques require documentation, they should be securely stored and\nreferenced throughout development. When designing systems that impact external audiences,\nregulatory requirements should be listed as acceptance criteria and revisited at every\ndevelopment stage. If the same data are used repeatedly, the regulatory review can cover\nrepeated use and should have a documented process (if necessary) to ensure compliance for\nfuture access and proper use. This will ensure that resources do not have to review the data\nevery time it is accessed."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 8,
+    "score": 1.0,
+    "text": "Building on this foundation, Vakkuri et al. (2021) introduced ECCOLA, a card-based toolkit\ntailored to agile AI and autonomous systems development. ECCOLA does not follow an\nacronym, but its sprint-by-sprint format maps well to the RESOLVEDD process. It consists of a\ndeck of 21 cards aligned to 8 core AI ethics themes (e.g., transparency, accountability, bias),\neach designed to provoke discussion, surface risks, and frame decisions during active\ndevelopment. The cards can be used in planning meetings to ensure that ethical issues are not\nonly acknowledged but actively scoped into the project as discrete tasks."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 8,
+    "score": 1.0,
+    "text": "By aligning ECCOLA cards to user stories, teams can define \"responsibility metrics\"\nalongside traditional performance metrics. For instance, if a card on transparency is selected,\nthe team may create a task to design interpretability strategies for end users. If a card on bias is\nrelevant, a corresponding task might include fairness audits or subgroup performance analysis."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 8,
+    "score": 1.0,
+    "text": "In this way, ECCOLA serves as a lightweight but structured extension of the RESOLVEDD\nreasoning model, embedding ethical reflection directly into the software development lifecycle\n(SDLC) in a format that scales for both large enterprises and lean startups.\n8"
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 8,
+    "score": 1.0,
+    "text": "This phase begins with breaking down high-level project goals into smaller, manageable user\nstories or tasks. These tasks often span data ingestion, cleaning, feature engineering, model\ndevelopment, evaluation, and integration. During planning, the data science team estimates\neach task's duration based on the scope of work for iterative delivery while leaving room for\nlearning, model iteration, and integration into production workflows."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 9,
+    "score": 1.0,
+    "text": "This approach helps convert abstract ethical principles into concrete, time-boxed actions that\ncan be tracked and revisited throughout the sprint cycle. It ensures that responsibility is not just\na post hoc evaluation, but a proactive part of scoping and estimating work. The following\nsections explore how this integration supports transparency, interpretability, and stakeholder\ntrust through novel metrics and communication methods."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 12,
+    "score": 1.0,
+    "text": "Acceptance criteria define the conditions that a product or feature must satisfy before they are\nconsidered complete. The concept is borrowed from established practices in traditional software\ndevelopment lifecycles (SDLC). For example, in the development of AI-powered clinical\ndiagnostic tools, acceptance criteria may include achieving a minimum accuracy threshold of\n95% in identifying specific conditions, or demonstrating consistent performance across diverse\npatient demographics. Such criteria help establish shared expectations and support regulatory\nalignment before AI models are integrated into clinical workflows. Atlassian describes\nacceptance criteria as \"clear, concise, and testable statements that focus on providing positive\ncustomer results\" (Atlassian, n.d.)."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 12,
+    "score": 1.0,
+    "text": "In AI systems, especially those used in high-stakes domains like healthcare, defining\nacceptance criteria is not just a technical step - it is a normative one. The choice of what counts\nas \u201cacceptable\u201d performance can have real-world implications for safety, equity, and trust. It is\ntherefore essential that these criteria be co-developed with key stakeholders, including\nclinicians, patients, domain experts, and end users. AI engineers may assume they understand\nwhat matters most to users, but this assumption often overlooks critical perspectives -\nparticularly around risk tolerance, fairness, and real-world utility. Engaging stakeholders in\ndefining success conditions helps ensure that the system reflects the values and priorities of\nthose it is intended to serve."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 12,
+    "score": 1.0,
+    "text": "While traditional software engineering often emphasizes binary outcomes (\u201cpass/fail\u201d), fairness\nin AI requires additional safeguards beyond standard SDLC practices. For instance, an\nalgorithm can return a reliable \u201cyes\u201d or \u201cno\u201d and pass functional tests, but there may be no\nchecks for how accurate those results are across demographic groups, or how transparently\nthose outcomes can be interpreted. Embedding fairness, equity, and performance expectations\ninto the acceptance criteria phase is one of the most direct and impactful ways to operationalize\nethical principles in AI development."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 12,
+    "score": 1.0,
+    "text": "Now that the acceptance criteria have been established, it is time to consider the range of\nimpacts that algorithmic results may have on real individuals\u2014including those who do not\ninterface with the system directly but are still affected by its outcomes. For example, a doctor\nmay use the algorithm\u2019s output directly to inform a clinical decision, while a patient may be\naffected by that decision indirectly. This section will discuss two distinct types of metrics that are\n12"
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 15,
+    "score": 1.0,
+    "text": "As described earlier in the task estimation phase, tools like ECCOLA can support the creation of\nproject-specific responsibility metrics integrated into an agile software development framework\nsuch as the below card example found in Illustration 1:"
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 16,
+    "score": 1.0,
+    "text": "after training for each gender and training set and proposed test &\nensure they are balanced validation set\n4. Check the distribution of impact 1. Distribution analysis of gender\nbased on final acceptance criteria records (same as above) for each\ntest metrics final outcome as seen in the final\nproduct. For example: How many"
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 22,
+    "score": 1.0,
+    "text": "A key differentiator of the SAFE-AI ethical development framework presented in this paper is its\ndeliberate and practical balance between ethical rigor and business priorities. Many existing\nframeworks, such as ECCOLA and others emerging from large academic institutions or\nregulatory bodies, are comprehensive but often prescriptive and cumbersome. Though they are\nalso attempting to be agile and balance speed, they are still perceived as processes that weigh\ndown innovation without providing a clearly articulated narrative that explains their relevance in\npractical business terms. Specifically, these frameworks offer valuable guidance on how to\n22"
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 23,
+    "score": 1.0,
+    "text": "Another key feature of the SAFE-AI framework is its emphasis on iterative ethical oversight. It\nrecognizes that AI models are not static artifacts but evolve over time through retraining,\nfine-tuning, and real-world feedback. Accordingly, SAFE-AI mandates that previously defined\nacceptance criteria and responsibility metrics be revisited - not recreated - after any substantive\nchanges to the model. This ensures that updates do not inadvertently introduce new ethical\nrisks or exacerbate existing biases, while avoiding unnecessary rework and preserving business\nagility."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 23,
+    "score": 1.0,
+    "text": "SAFE-AI seeks to address this gap by explicitly aligning ethical evaluation with business\npriorities, development speed, and stakeholder objectives. It frames ethical assessment not as\nan overhead cost, but as a strategic risk mitigation process that helps ensure model integrity,\nmaintain user trust, and prevent potential regulatory, reputational, or financial harm. SAFE-AI is\npurposefully designed to complement the natural rhythms of modern software and AI product\ndevelopment by integrating ethical review seamlessly into existing Agile and Scrum workflows."
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 26,
+    "score": 1.0,
+    "text": "The SAFE-AI ethical development framework proposed in this paper offers a practical,\nbusiness-aligned approach for integrating responsible AI practices into the everyday workflows\nof product and data science teams. By mirroring established Agile and Scrum methodologies,"
+  },
+  {
+    "source": "regex_theme",
+    "category": "agile_process",
+    "implementation_step": "",
+    "page": 28,
+    "score": 1.0,
+    "text": "Atlassian. (n.d.). Acceptance Criteria Explained. Atlassian. Retrieved January 23, 2025,\nfrom\nhttps://www.atlassian.com/work-management/project-management/acceptance-criteria"
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 6,
+    "score": 1.0,
+    "text": "The SAFE-AI framework is not a one-time gate. It is designed to be re-entered at any point in\nthe development lifecycle whenever changes occur that could materially affect the behavior,\nfairness, or transparency of the AI system. This includes retraining with new data,\nhyperparameter adjustments, updates to feature selection, or integrating external datasets."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 9,
+    "score": 1.0,
+    "text": "Developing Product Engine (PE): Traditional software development where the\nsoftware product and architecture are built. The PE involves building systems that are\nhighly repeatable, highly predictable, and easily tested. For example, building a\ndatabase is predictable because there is no mathematical uncertainty involved - tables\nare either created or not, fields either exist or they don\u2019t, and data either matches a\nschema or it doesn\u2019t. It is clear when the task is complete, and the outcome is\ndeterministic. A database is a database, features are features - done. Similarly, building\na system that calls data from that database and presents it in an application is also\nstraightforward. A software team can build the product and create a holding spot for the\ndata that will be produced by the inference engine. A successful product typically runs\nthe same code twice and gets the exact same result."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 9,
+    "score": 1.0,
+    "text": "Developing an Inference Engine (IE): On the surface, an inference engine may look\nsimilar to traditional product features. It has code, it executes functions, and it reads from\nand writes to databases. However, where it differs is significant. Unlike product code -\nwhich is deterministic and repeatable - the inference engine introduces mathematical\nuncertainty. The data it processes and outputs often relies on probabilistic models,\nrandomization, or sampling techniques. This means running the same code twice can\nproduce different results, and that\u2019s not a bug - it\u2019s an expected behavior. While a\ndatabase or UI element has a clear \u201cdone\u201d state (e.g., a schema exists or it doesn\u2019t), an\ninference engine outputs predictions that must be interpreted within a range of\nacceptable outcomes. There\u2019s no binary pass/fail: instead, performance must be\nevaluated across multiple runs, data splits, and use cases."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 10,
+    "score": 1.0,
+    "text": "AI Integration (AII): TThis is the convergence point. AI Integration (AII) is where a\nvalidated inference engine is embedded into the product codebase. This integration\ncode is functional in nature: it accepts input, runs the algorithm, and outputs predictions."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 10,
+    "score": 1.0,
+    "text": "As shown, the Inference Engine (IE) and Product Engine (PE) evolve on separate but\nparallel development tracks, each with its own branching and deployment cadence. For\nexample, Live IE version 1.1 may remain in production while a newer Dev IE v1.2 is\nbeing validated, just as Dev PE v2.2 advances independently of earlier releases. The AI"
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 11,
+    "score": 1.0,
+    "text": "This moment\u2014marked by the star icon\u2014represents the culmination of both tracks,\nwhere a stable inference engine is paired with its corresponding product version for\nrelease. Once deployed, the system enters a new live state (e.g., Live PE v2.2 with Live"
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 11,
+    "score": 1.0,
+    "text": "It\u2019s important to note that changes to the Inference Engine (IE) don\u2019t always involve\nmodifications to input or output formats. The structure of the data pipeline may remain\nconsistent even as the underlying model evolves\u2014through algorithm updates, parameter\ntuning, or other enhancements. The purpose of the diagram is simply to illustrate that, at\nsome point, the IE and Product Engine (PE) must converge during the AI Integration\nphase. However, since IE updates can occur independently of PE deployments, it's\ncritical that any such changes\u2014regardless of how minimal they may appear\u2014still\nundergo the SAFE-AI evaluation process. This ensures that even behind-the-scenes\nmodel improvements are held to the same standards of validation, risk assessment, and\naccountability."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 11,
+    "score": 1.0,
+    "text": "This section occurs during the Inference Engine (IE) phase and outlines key steps the data\nscience team - both technical and product stakeholders - should complete before progressing to\ndevelopment and integration. These steps ensure that AI inference engines operate within\ndefined boundaries of uncertainty and acceptable risk, aligning with ethical standards and\nstrategic business goals."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 17,
+    "score": 1.0,
+    "text": "Once an inference engine has been approved and integrated into a production environment, it is\ncommon practice to revisit the model for improvements through techniques such as retraining\nwith new data, hyperparameter tuning, or feature modifications. While these changes may be\nperceived as incremental or routine, they carry the potential to significantly alter the algorithm\u2019s\nbehavior, calibration, and fairness properties. Even minor updates can reintroduce latent biases,\nshift subgroup performance, or affect the interpretability and reliability of outputs."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 17,
+    "score": 1.0,
+    "text": "From an ethical standpoint, any modification to the inference engine including changes to a\nsingle model or updates to the system of models should be treated as a new model iteration\nwhen following the SAFE_AI framework, regardless of whether the foundational architecture\nremains unchanged. Although it is not necessary to recreate the entire ethical evaluation\npipeline, it is considered best practice to reapply the original assessment metrics established\nduring initial development (outlined in Part II \u2013 Assessment). This allows teams to validate that\nthe updated model continues to meet ethical expectations for fairness, transparency, and\nperformance consistency."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 20,
+    "score": 1.0,
+    "text": "Input//Output Contract: The data engineering process will need to know what data to\ncreate to feed into the algorithm and how often, while also asking for the algorithm\noutputs in return. This contract can be version controlled to say: the system will always\ngive you these data in this format, and your inference engine will always give certain\ndata and in a certain format in return. This makes updating the algorithm in the future\neasier, which will be discussed later."
+  },
+  {
+    "source": "regex_theme",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 24,
+    "score": 1.0,
+    "text": "Additionally, one of the most overlooked sources of ethical risk in AI systems is introduced not\nduring the initial development but during subsequent algorithmic updates, such as model\nretraining or hyperparameter tuning. Even seemingly minor updates can alter the balance of an\nalgorithm in subtle ways that inadvertently introduce ethical imbalances or exacerbate existing\ndisparities. As described in the section titled \"Post-Deployment Modifications,\" SAFE-AI\nmandates that any update to an existing inference engine - whether through additional training\ndata, tuning, or rebalancing - should be treated as a new project cycle. Although previously\nestablished assessment metrics can and should be reused, they must be explicitly re-evaluated\n24"
+  },
+  {
+    "source": "regex_theme",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 1,
+    "score": 1.0,
+    "text": "Artificial intelligence (AI) offers incredible possibilities for patient care, but raises\nsignificant ethical issues, such as the potential for bias. Powerful ethical\nframeworks exist to minimize these issues, but are often developed for academic\nor regulatory environments and tend to be comprehensive but overly\nprescriptive, making them difficult to operationalize within fast-paced,\nresource-constrained environments. We introduce the Scalable Agile Framework\nfor Execution in AI (SAFE-AI) designed to balance ethical rigor with business\npriorities by embedding ethical oversight into standard Agile-based product\ndevelopment workflows. The framework emphasizes the early establishment of\ntestable acceptance criteria, fairness metrics, and transparency metrics to\nmanage model uncertainty, while also promoting continuous monitoring and\nre-evaluation of these metrics across the AI lifecycle. A core component of this\nframework are responsibility metrics using scenario-based probability analogy\nmapping designed to enhance transparency and stakeholder trust. This ensures\nthat retraining or tuning activities are subject to lightweight but meaningful ethical\nreview. By focusing on the minimum necessary requirements for responsible\ndevelopment, our framework offers a scalable, business-aligned approach to\nethical AI suitable for organizations without dedicated ethics teams."
+  },
+  {
+    "source": "regex_theme",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 5,
+    "score": 1.0,
+    "text": "\u25cf Governance metrics: count and category of fairness metrics defined per project.\n\u25cf Usability: post-implementation survey of participating staff (5-item Likert scale; 1 =\nstrongly disagree, 5 = strongly agree)."
+  },
+  {
+    "source": "regex_theme",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 13,
+    "score": 1.0,
+    "text": "Fairness Metrics: Define and measure bias within AI systems. As The Software Alliance\n(2021) states, fairness is subjective and requires selecting the most appropriate metrics for\nthe system being developed. These metrics should be documented and reviewed\ncollaboratively by subject matter experts and data scientists (The Software Alliance, 2021)."
+  },
+  {
+    "source": "regex_theme",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 13,
+    "score": 1.0,
+    "text": "In practice, fairness metrics are used to detect and mitigate disparate impacts\u2014ensuring\nthat one group or class (e.g., based on race, gender, age, or geography) is not\ndisproportionately harmed or excluded compared to others. This may involve evaluating\nperformance across subgroups, measuring disparities in false positives or negatives, or\nassessing equal access to beneficial outcomes. The goal is not only to identify statistical\nimbalance, but to actively choose metrics that reflect the ethical priorities and risk\ntolerances of the system\u2019s intended users and affected populations."
+  },
+  {
+    "source": "regex_theme",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 13,
+    "score": 1.0,
+    "text": "This approach is particularly important in high-stakes domains like healthcare, where\ndecision-makers such as clinicians, patients, or administrators must weigh the risks of false\npositives and false negatives. By highlighting the probability of misclassification and\nmapping those scenarios to familiar contexts, stakeholders can assess how often and\nunder what circumstances the model may be wrong - and what the real-world\nconsequences of those errors might be. For example, if a model is correct 85% of the time\nbut consistently fails on a particular patient subgroup, this insight can guide mitigation\nstrategies, prompt workflow adjustments, or justify additional human oversight. These\ndimensions of model behavior - error distribution, uncertainty, and impact - are often absent\nin standard AI evaluation pipelines."
+  },
+  {
+    "source": "regex_theme",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 14,
+    "score": 1.0,
+    "text": "Crucially, this framing also enables teams to assign tangible costs to errors by explicitly\nasking: What can happen if this prediction is wrong? and What is the risk impact to the\norganization or patient? For example, a false negative in a sepsis prediction model may\ndelay critical treatment, leading to clinical harm, regulatory exposure, and reputational\ndamage. A false positive in an insurance fraud detector may result in a wrongful denial of\nbenefits, eroding user trust and increasing legal liability. By mapping these risks to\npredicted outcomes and associated variables, organizations can better understand which\nerrors matter most, estimate their financial or operational consequences, and prioritize\nsafeguards accordingly. Integrating these cost-of-error considerations into the transparency\n14"
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 1,
+    "score": 1.0,
+    "text": "Artificial intelligence (AI) offers incredible possibilities for patient care, but raises\nsignificant ethical issues, such as the potential for bias. Powerful ethical\nframeworks exist to minimize these issues, but are often developed for academic\nor regulatory environments and tend to be comprehensive but overly\nprescriptive, making them difficult to operationalize within fast-paced,\nresource-constrained environments. We introduce the Scalable Agile Framework\nfor Execution in AI (SAFE-AI) designed to balance ethical rigor with business\npriorities by embedding ethical oversight into standard Agile-based product\ndevelopment workflows. The framework emphasizes the early establishment of\ntestable acceptance criteria, fairness metrics, and transparency metrics to\nmanage model uncertainty, while also promoting continuous monitoring and\nre-evaluation of these metrics across the AI lifecycle. A core component of this\nframework are responsibility metrics using scenario-based probability analogy\nmapping designed to enhance transparency and stakeholder trust. This ensures\nthat retraining or tuning activities are subject to lightweight but meaningful ethical\nreview. By focusing on the minimum necessary requirements for responsible\ndevelopment, our framework offers a scalable, business-aligned approach to\nethical AI suitable for organizations without dedicated ethics teams."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 4,
+    "score": 1.0,
+    "text": "The co-design process yielded:\n\u25cf a four-phase life-cycle diagram (Discovery, Assessment, Development, Monitoring);\n\u25cf stage-specific checklists covering acceptance, fairness, and transparency metrics;\n\u25cf practical implementation guidance (eg, role assignments, artefact templates) for each\nphase."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 4,
+    "score": 1.0,
+    "text": "SAFE-AI will be applied to two upcoming MTN initiatives - a patient-monitoring product and a\ndata-engineering pipeline. A lightweight evaluation plan was pre-specified to capture:\n\u25cf Process metrics: time (hours) required to complete each SAFE-AI phase.\n4"
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 5,
+    "score": 1.0,
+    "text": "Figure 1. SAFE-AI Summary Workflow - highlights each core phase and feedback loop, from\nprioritization to deployment and monitoring.\n5"
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 16,
+    "score": 1.0,
+    "text": "Risk analysis should be conducted collaboratively including consultation with relevant\nstakeholders like product teams, data scientists, and legal experts. There are many possible\napproaches and the following are a few examples of structured risk analysis processes that\nalready exist in the field of AI and healthcare.\n1) The NIST AI Risk Management Framework provides structured guidelines for evaluating\nrisks in AI systems, emphasizing trustworthiness and resilience through iterative\nassessments (NIST AIRC, n.d.).\n2) McKinsey\u2019s 'Derisking AI by Design' approach highlights the necessity of integrating risk\nmanagement throughout the AI lifecycle, focusing on proactive monitoring and\ngovernance (Baquero et al., 2020).\n3) Stanford\u2019s AI healthcare risk assessment framework outlines liability risks in medical AI\napplications, suggesting adaptive monitoring strategies to address unforeseen ethical\nand operational challenges (Mello & Guha, 2024).\n4) The FDA's Total Product Life Cycle (TPLC) framework ensures continuous oversight\nfrom AI model development through post-market surveillance. The FDA writes how"
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 19,
+    "score": 1.0,
+    "text": "\u25cf Establishing monitoring systems to track performance and make adjustments as\nnecessary.\n\u25cf Performing necessary training and preparing the organization to manage a\npost-deployment environment including marketing, legal, user training and support, and\nall the typical considerations when delivering a new product to market."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 21,
+    "score": 1.0,
+    "text": "According to the Data Science Alliance (2024), four important types of concerns exist when\nconducting monitoring:\n\u25cf Concept drift: Also known as model drift, this occurs when the patterns or relationships\nestimated by the model shift from their state at deployment. These shifts can manifest\ninstantaneously, gradually, cyclically, or temporarily, potentially compromising the\nmodel's effectiveness.\n\u25cf Data drift: This phenomenon emerges when the distribution of production data\nsignificantly differs from the training data. While the negative impact of data drift on\nmodel performance typically develops slowly, its effects compound over time, leading to\nincreasingly unreliable results.\n\u25cf Data integrity: Production environments may introduce unexpected variables,\nincompatible data types, or inconsistent measurements that differ from the model's\ntraining environment. These integrity issues can severely impact the model's accuracy\nand reliability, requiring immediate attention and correction.\n\u25cf Bias drift: Even a model developed with careful consideration for fairness and bias\nmitigation can become unfair in production due to bias drift. As societies evolve, existing\nbiases may diminish while new ones emerge, requiring continuous monitoring and\nadjustment to maintain ethical performance."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 21,
+    "score": 1.0,
+    "text": "After deployment, system monitoring and evaluation at regular intervals can help ensure the\nprevention of potential harm creation or perpetuation. While initial model results may meet\nresponsibility metrics during development, changes in data patterns or underlying system\ncharacteristics could cause deviations in production performance."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 21,
+    "score": 1.0,
+    "text": "The team will benefit from establishing robust evaluation frameworks to effectively monitor and\naddress these potential drifts. The foundation of this framework relies on the fairness and\ntransparency metrics established during model development, which serve as critical\nbenchmarks for ongoing evaluation. By systematically tracking these metrics and implementing\n21"
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 22,
+    "score": 1.0,
+    "text": "structured monitoring processes, it is possible to detect and respond to performance\ndegradation before it significantly impacts stakeholders."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 22,
+    "score": 1.0,
+    "text": "Below are the recommended steps to implement an effective monitoring structure:\n1. Automate Monitoring and Alerting: Deploy automated tools that continuously track\nfairness and transparency metrics. Integrate these tools with alert systems to flag\ndeviations as soon as they occur. This will enable the team to respond rapidly to\npotential issues, minimize system downtime, and prevent cascading failures that could\naffect downstream processes.\n2. Scheduled Reviews: Implement periodic review sessions (e.g., monthly or quarterly)\ninvolving interdisciplinary teams - data scientists, clinicians, and ethics experts - to\nanalyze monitoring reports and determine if intervention (such as model retraining or\nrecalibration) is needed.\n3. Document Changes: Maintain a log of all monitoring outcomes, detected drifts,\ninterventions, and the rationale behind any model updates. This documentation is crucial\nfor auditability and regulatory compliance.\n4. User Feedback Integration: Establish channels for end-user (clinician and patient)\nfeedback regarding both model performance and explainability. Use structured surveys\nand focus groups to gather qualitative data that can inform further improvements.\n5. Iterative Improvement: Based on audit findings and feedback, implement retraining or\nfine-tuning cycles that re-incorporate recent data. Validate updated models against the\nestablished responsibility metrics before redeployment."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 22,
+    "score": 1.0,
+    "text": "Effective system monitoring and evaluation represent crucial components of responsible AI\ndeployment. Potential issues can be identified and addressed early on with the right tools in\nplace. This proactive approach, combined with structured feedback mechanisms and\ncontinuous improvement processes, helps ensure that AI systems remain both technically\nsound and ethically aligned with their intended purposes."
+  },
+  {
+    "source": "regex_theme",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 24,
+    "score": 1.0,
+    "text": "Additionally, one of the most overlooked sources of ethical risk in AI systems is introduced not\nduring the initial development but during subsequent algorithmic updates, such as model\nretraining or hyperparameter tuning. Even seemingly minor updates can alter the balance of an\nalgorithm in subtle ways that inadvertently introduce ethical imbalances or exacerbate existing\ndisparities. As described in the section titled \"Post-Deployment Modifications,\" SAFE-AI\nmandates that any update to an existing inference engine - whether through additional training\ndata, tuning, or rebalancing - should be treated as a new project cycle. Although previously\nestablished assessment metrics can and should be reused, they must be explicitly re-evaluated\n24"
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 1,
+    "score": 1.0,
+    "text": "Artificial intelligence (AI) offers incredible possibilities for patient care, but raises\nsignificant ethical issues, such as the potential for bias. Powerful ethical\nframeworks exist to minimize these issues, but are often developed for academic\nor regulatory environments and tend to be comprehensive but overly\nprescriptive, making them difficult to operationalize within fast-paced,\nresource-constrained environments. We introduce the Scalable Agile Framework\nfor Execution in AI (SAFE-AI) designed to balance ethical rigor with business\npriorities by embedding ethical oversight into standard Agile-based product\ndevelopment workflows. The framework emphasizes the early establishment of\ntestable acceptance criteria, fairness metrics, and transparency metrics to\nmanage model uncertainty, while also promoting continuous monitoring and\nre-evaluation of these metrics across the AI lifecycle. A core component of this\nframework are responsibility metrics using scenario-based probability analogy\nmapping designed to enhance transparency and stakeholder trust. This ensures\nthat retraining or tuning activities are subject to lightweight but meaningful ethical\nreview. By focusing on the minimum necessary requirements for responsible\ndevelopment, our framework offers a scalable, business-aligned approach to\nethical AI suitable for organizations without dedicated ethics teams."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 4,
+    "score": 1.0,
+    "text": "The co-design process yielded:\n\u25cf a four-phase life-cycle diagram (Discovery, Assessment, Development, Monitoring);\n\u25cf stage-specific checklists covering acceptance, fairness, and transparency metrics;\n\u25cf practical implementation guidance (eg, role assignments, artefact templates) for each\nphase."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 8,
+    "score": 1.0,
+    "text": "By aligning ECCOLA cards to user stories, teams can define \"responsibility metrics\"\nalongside traditional performance metrics. For instance, if a card on transparency is selected,\nthe team may create a task to design interpretability strategies for end users. If a card on bias is\nrelevant, a corresponding task might include fairness audits or subgroup performance analysis."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 9,
+    "score": 1.0,
+    "text": "This approach helps convert abstract ethical principles into concrete, time-boxed actions that\ncan be tracked and revisited throughout the sprint cycle. It ensures that responsibility is not just\na post hoc evaluation, but a proactive part of scoping and estimating work. The following\nsections explore how this integration supports transparency, interpretability, and stakeholder\ntrust through novel metrics and communication methods."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 13,
+    "score": 1.0,
+    "text": "Transparency Metrics: Define metrics that focus on ensuring that AI model predictions are\ninterpretable, explainable, and actionable by end users. One technique used in this\nframework is a scenario-based probability analogy mapping method - a structured\napproach to communicating AI predictions by framing them as outcome narratives\ngrounded in real-world context. This method, which we refer to as scenario-based\nprobability analogy mapping method (SPAMM), enhances transparency by mapping\nprobabilities to familiar analogies that illustrate the likelihood of different scenarios, the\nconditions under which errors occur, and their potential consequences. Rather than\nfocusing solely on model internals, SPAMM presents predictions in narrative form -\nconveying not only what the model predicts, but why, how alternative outcomes compare,\nand which inputs most influence the result. This approach builds stakeholder trust by\nmaking uncertainty and risk both visible and relatable."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 13,
+    "score": 1.0,
+    "text": "Accumulated Local Effects (ALE) are valuable for understanding model behavior. SHAP,\nbased on cooperative game theory, assigns each feature an importance value representing\n13"
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 14,
+    "score": 1.0,
+    "text": "its contribution to a particular prediction - similar to calculating how much each player\ncontributed to a team\u2019s win. LIME works by perturbing the input data near a given instance\nand fitting a simple model to explain the local decision boundary. PDP and ALE methods\nhelp assess how the average model output changes when a single feature is varied, which\nsupports global interpretability, especially when exploring relationships between inputs and\noutcomes."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 14,
+    "score": 1.0,
+    "text": "As a result, we apply SPAMM, which adds a critical layer to the transparency toolkit by\nreframing predictive outputs in terms that mirror how people naturally reason under\nuncertainty. At its core, the method walks users through a model\u2019s output by anchoring it to\nthe specific input conditions that led to that prediction\u2014and by showing how often those\nconditions have historically produced similar outcomes. For example, if a model predicts\noutcome \u201cC\u201d among options A, B, and C, it may also convey that in 70% of similar cases,\nvariables x1, x2, and x5 were associated with outcome C, while in 20% of cases, the model\npredicted outcome B under slightly different input patterns. Presenting outputs in this\ncontext\u2014grounded in familiar patterns and frequencies\u2014helps stakeholders understand\nnot just what the model predicted, but why it arrived at that decision, how likely alternative\noutcomes were, and how much confidence they can place in it. While this can become\ncomplex in models with high-dimensional input spaces or large numbers of interacting\nvariables, the point is not to replicate the entire model logic\u2014it is to provide a real-world\ntesting lens that frames predictions through the lens of practical \"what-if\" scenarios. This\nhelps surface critical edge cases, increase interpretability, and build trust\u2014especially in\nsettings where human oversight and risk-based decisions are essential."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 15,
+    "score": 1.0,
+    "text": "process transforms interpretability from a purely technical exercise into a tool for risk\nmitigation and strategic alignment."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 17,
+    "score": 1.0,
+    "text": "Once an inference engine has been approved and integrated into a production environment, it is\ncommon practice to revisit the model for improvements through techniques such as retraining\nwith new data, hyperparameter tuning, or feature modifications. While these changes may be\nperceived as incremental or routine, they carry the potential to significantly alter the algorithm\u2019s\nbehavior, calibration, and fairness properties. Even minor updates can reintroduce latent biases,\nshift subgroup performance, or affect the interpretability and reliability of outputs."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 21,
+    "score": 1.0,
+    "text": "The team will benefit from establishing robust evaluation frameworks to effectively monitor and\naddress these potential drifts. The foundation of this framework relies on the fairness and\ntransparency metrics established during model development, which serve as critical\nbenchmarks for ongoing evaluation. By systematically tracking these metrics and implementing\n21"
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 22,
+    "score": 1.0,
+    "text": "Below are the recommended steps to implement an effective monitoring structure:\n1. Automate Monitoring and Alerting: Deploy automated tools that continuously track\nfairness and transparency metrics. Integrate these tools with alert systems to flag\ndeviations as soon as they occur. This will enable the team to respond rapidly to\npotential issues, minimize system downtime, and prevent cascading failures that could\naffect downstream processes.\n2. Scheduled Reviews: Implement periodic review sessions (e.g., monthly or quarterly)\ninvolving interdisciplinary teams - data scientists, clinicians, and ethics experts - to\nanalyze monitoring reports and determine if intervention (such as model retraining or\nrecalibration) is needed.\n3. Document Changes: Maintain a log of all monitoring outcomes, detected drifts,\ninterventions, and the rationale behind any model updates. This documentation is crucial\nfor auditability and regulatory compliance.\n4. User Feedback Integration: Establish channels for end-user (clinician and patient)\nfeedback regarding both model performance and explainability. Use structured surveys\nand focus groups to gather qualitative data that can inform further improvements.\n5. Iterative Improvement: Based on audit findings and feedback, implement retraining or\nfine-tuning cycles that re-incorporate recent data. Validate updated models against the\nestablished responsibility metrics before redeployment."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 23,
+    "score": 1.0,
+    "text": "SAFE-AI further distinguishes itself by introducing the scenario-based analogies SPAMM as an\napproach to communicating the ethical risks associated with AI models.Traditional\ninterpretability tools, such as SHAP and LIME, focus on explaining the internal mechanics of\nmodels in highly technical terms. While valuable, these tools often fail to communicate the\npractical implications of model behavior to non-technical stakeholders, such as business\nleaders, clinicians, or regulatory bodies. This method addresses this gap by mapping model\noutputs to real-world scenarios, probabilities, and cost-based analogies that can be easily\nunderstood by multidisciplinary teams. This method facilitates more transparent discussions\nabout risk, ethical trade-offs, and decision-making costs, making it easier for organizations to\nweigh these factors against business priorities."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 24,
+    "score": 1.0,
+    "text": "Setting responsibility metrics is not merely a technical exercise but an ethical obligation. Without\nthese metrics, it is impossible to contextualize and evaluate how well the algorithm is performing\nagainst real-world risks. The development of responsibility metrics, including fairness and\ntransparency metrics, must occur in tandem with risk interpretation strategies to ensure that\nmetrics are not abstract or arbitrary but rather aligned with the actual impact on the user\npopulation."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 24,
+    "score": 1.0,
+    "text": "A core principle of ethical AI development in healthcare is ensuring that the inherent risks of\nautomated decision-making are both interpretable and measurable. Modeling risk interpretability\nis not a secondary concern but a foundational necessity for responsible AI deployment. Without\nclear and agreed-upon mechanisms for understanding how an algorithm\u2019s predictions translate\ninto real-world outcomes, healthcare providers and affected individuals are left to navigate an\nopaque and potentially harmful system."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 24,
+    "score": 1.0,
+    "text": "The introduction of the SAFE-AI framework addresses this challenge directly by developing\nprobability analogy methods to bridge the gap between complex model behavior and the\npractical, human-driven ethical decision-making processes within healthcare settings. Unlike\ntraditional explainability tools, which often focus exclusively on mathematical metrics or\ntechnical explanations, while emphasizing narrative-driven, probabilistic scenarios that map\nmodel behavior to understandable analogies. This approach acknowledges the reality that\nnon-technical stakeholders, including clinicians, patients, and regulatory bodies, must ultimately\nbe able to evaluate and engage with the outputs of AI systems in order to trust them."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 25,
+    "score": 1.0,
+    "text": "Finally, it is important to emphasize that the development of these metrics and risk\ninterpretability mechanisms cannot be left solely to technical teams. The most effective way to\nsafeguard against ethical harm is through multidisciplinary collaboration. Risk interpretation is\ninherently contextual; it requires input from healthcare professionals, regulatory experts,\nethicists, and product stakeholders who understand the social and operational realities in which\nthe AI system will function. This collaborative approach ensures that metrics are not only\ntechnically valid but ethically relevant and meaningful to the people most impacted by the\nmodel\u2019s behavior."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 27,
+    "score": 1.0,
+    "text": "A key innovation introduced by SAFE-AI is the scenario-based probability analogy mapping\nprocess as an interpretability technique designed to enhance trust among non-technical\nstakeholders. Translating probabilistic model behavior into familiar, narrative-based analogies\nwith associated risks and costs helps explain how and why AI systems reach certain predictions\n- especially in high-stakes healthcare settings where transparency is critical. Unlike traditional\nexplainability tools that focus on model internals, SAFE-AI centers on real-world interpretability,\noffering an accessible way to communicate model behavior, associated risks, and uncertainty in\ndecision-making. As such, it not only supports transparency but serves as a bridge between\nethical modeling and user-centered design."
+  },
+  {
+    "source": "regex_theme",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 29,
+    "score": 1.0,
+    "text": "Local Effects (ALE). Towards Data Science.\nhttps://towardsdatascience.com/explainable-ai-xai-methods-part-3-accumulated-local-e\nffects-ale-cf6ba3387fde/"
+  },
+  {
+    "source": "semantic_query",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 13,
+    "score": 0.7070000171661377,
+    "text": "In practice, fairness metrics are used to detect and mitigate disparate impacts\u2014ensuring\nthat one group or class (e.g., based on race, gender, age, or geography) is not\ndisproportionately harmed or excluded compared to others. This may involve evaluating\nperformance across subgroups, measuring disparities in false positives or negatives, or\nassessing equal access to beneficial outcomes. The goal is not only to identify statistical\nimbalance, but to actively choose metrics that reflect the ethical priorities and risk\ntolerances of the system\u2019s intended users and affected populations."
+  },
+  {
+    "source": "semantic_query",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 13,
+    "score": 0.5696960687637329,
+    "text": "Fairness Metrics: Define and measure bias within AI systems. As The Software Alliance\n(2021) states, fairness is subjective and requires selecting the most appropriate metrics for\nthe system being developed. These metrics should be documented and reviewed\ncollaboratively by subject matter experts and data scientists (The Software Alliance, 2021)."
+  },
+  {
+    "source": "semantic_query",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 24,
+    "score": 0.49457085132598877,
+    "text": "Setting responsibility metrics is not merely a technical exercise but an ethical obligation. Without\nthese metrics, it is impossible to contextualize and evaluate how well the algorithm is performing\nagainst real-world risks. The development of responsibility metrics, including fairness and\ntransparency metrics, must occur in tandem with risk interpretation strategies to ensure that\nmetrics are not abstract or arbitrary but rather aligned with the actual impact on the user\npopulation."
+  },
+  {
+    "source": "semantic_query",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 28,
+    "score": 0.4944460988044739,
+    "text": "Entrepreneurs. Proceedings of the 2023 ACM Conference on Fairness, Accountability,\nand Transparency, 217\u2013226. https://doi.org/10.1145/3593013.3593990"
+  },
+  {
+    "source": "semantic_query",
+    "category": "fairness",
+    "implementation_step": "",
+    "page": 12,
+    "score": 0.46544498205184937,
+    "text": "While traditional software engineering often emphasizes binary outcomes (\u201cpass/fail\u201d), fairness\nin AI requires additional safeguards beyond standard SDLC practices. For instance, an\nalgorithm can return a reliable \u201cyes\u201d or \u201cno\u201d and pass functional tests, but there may be no\nchecks for how accurate those results are across demographic groups, or how transparently\nthose outcomes can be interpreted. Embedding fairness, equity, and performance expectations\ninto the acceptance criteria phase is one of the most direct and impactful ways to operationalize\nethical principles in AI development."
+  },
+  {
+    "source": "semantic_query",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 13,
+    "score": 0.688957154750824,
+    "text": "Transparency Metrics: Define metrics that focus on ensuring that AI model predictions are\ninterpretable, explainable, and actionable by end users. One technique used in this\nframework is a scenario-based probability analogy mapping method - a structured\napproach to communicating AI predictions by framing them as outcome narratives\ngrounded in real-world context. This method, which we refer to as scenario-based\nprobability analogy mapping method (SPAMM), enhances transparency by mapping\nprobabilities to familiar analogies that illustrate the likelihood of different scenarios, the\nconditions under which errors occur, and their potential consequences. Rather than\nfocusing solely on model internals, SPAMM presents predictions in narrative form -\nconveying not only what the model predicts, but why, how alternative outcomes compare,\nand which inputs most influence the result. This approach builds stakeholder trust by\nmaking uncertainty and risk both visible and relatable."
+  },
+  {
+    "source": "semantic_query",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 14,
+    "score": 0.5751457810401917,
+    "text": "As a result, we apply SPAMM, which adds a critical layer to the transparency toolkit by\nreframing predictive outputs in terms that mirror how people naturally reason under\nuncertainty. At its core, the method walks users through a model\u2019s output by anchoring it to\nthe specific input conditions that led to that prediction\u2014and by showing how often those\nconditions have historically produced similar outcomes. For example, if a model predicts\noutcome \u201cC\u201d among options A, B, and C, it may also convey that in 70% of similar cases,\nvariables x1, x2, and x5 were associated with outcome C, while in 20% of cases, the model\npredicted outcome B under slightly different input patterns. Presenting outputs in this\ncontext\u2014grounded in familiar patterns and frequencies\u2014helps stakeholders understand\nnot just what the model predicted, but why it arrived at that decision, how likely alternative\noutcomes were, and how much confidence they can place in it. While this can become\ncomplex in models with high-dimensional input spaces or large numbers of interacting\nvariables, the point is not to replicate the entire model logic\u2014it is to provide a real-world\ntesting lens that frames predictions through the lens of practical \"what-if\" scenarios. This\nhelps surface critical edge cases, increase interpretability, and build trust\u2014especially in\nsettings where human oversight and risk-based decisions are essential."
+  },
+  {
+    "source": "semantic_query",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 27,
+    "score": 0.5216593146324158,
+    "text": "A key innovation introduced by SAFE-AI is the scenario-based probability analogy mapping\nprocess as an interpretability technique designed to enhance trust among non-technical\nstakeholders. Translating probabilistic model behavior into familiar, narrative-based analogies\nwith associated risks and costs helps explain how and why AI systems reach certain predictions\n- especially in high-stakes healthcare settings where transparency is critical. Unlike traditional\nexplainability tools that focus on model internals, SAFE-AI centers on real-world interpretability,\noffering an accessible way to communicate model behavior, associated risks, and uncertainty in\ndecision-making. As such, it not only supports transparency but serves as a bridge between\nethical modeling and user-centered design."
+  },
+  {
+    "source": "semantic_query",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 23,
+    "score": 0.4800296127796173,
+    "text": "SAFE-AI further distinguishes itself by introducing the scenario-based analogies SPAMM as an\napproach to communicating the ethical risks associated with AI models.Traditional\ninterpretability tools, such as SHAP and LIME, focus on explaining the internal mechanics of\nmodels in highly technical terms. While valuable, these tools often fail to communicate the\npractical implications of model behavior to non-technical stakeholders, such as business\nleaders, clinicians, or regulatory bodies. This method addresses this gap by mapping model\noutputs to real-world scenarios, probabilities, and cost-based analogies that can be easily\nunderstood by multidisciplinary teams. This method facilitates more transparent discussions\nabout risk, ethical trade-offs, and decision-making costs, making it easier for organizations to\nweigh these factors against business priorities."
+  },
+  {
+    "source": "semantic_query",
+    "category": "transparency",
+    "implementation_step": "",
+    "page": 15,
+    "score": 0.4660843014717102,
+    "text": "This framework invites further development in areas such as visualization, user-centered\nmetrics, and storytelling techniques for AI transparency. While this paper does not formalize the\nfull methodology, it highlights the importance of designing explanation strategies that reflect how\nreal-world users evaluate uncertainty, reliability, and relevance - not just technical performance."
+  },
+  {
+    "source": "semantic_query",
+    "category": "agile",
+    "implementation_step": "",
+    "page": 8,
+    "score": 0.6651538014411926,
+    "text": "By aligning ECCOLA cards to user stories, teams can define \"responsibility metrics\"\nalongside traditional performance metrics. For instance, if a card on transparency is selected,\nthe team may create a task to design interpretability strategies for end users. If a card on bias is\nrelevant, a corresponding task might include fairness audits or subgroup performance analysis."
+  },
+  {
+    "source": "semantic_query",
+    "category": "agile",
+    "implementation_step": "",
+    "page": 15,
+    "score": 0.580706000328064,
+    "text": "As described earlier in the task estimation phase, tools like ECCOLA can support the creation of\nproject-specific responsibility metrics integrated into an agile software development framework\nsuch as the below card example found in Illustration 1:"
+  },
+  {
+    "source": "semantic_query",
+    "category": "agile",
+    "implementation_step": "",
+    "page": 8,
+    "score": 0.5552222728729248,
+    "text": "Building on this foundation, Vakkuri et al. (2021) introduced ECCOLA, a card-based toolkit\ntailored to agile AI and autonomous systems development. ECCOLA does not follow an\nacronym, but its sprint-by-sprint format maps well to the RESOLVEDD process. It consists of a\ndeck of 21 cards aligned to 8 core AI ethics themes (e.g., transparency, accountability, bias),\neach designed to provoke discussion, surface risks, and frame decisions during active\ndevelopment. The cards can be used in planning meetings to ensure that ethical issues are not\nonly acknowledged but actively scoped into the project as discrete tasks."
+  },
+  {
+    "source": "semantic_query",
+    "category": "agile",
+    "implementation_step": "",
+    "page": 9,
+    "score": 0.48269423842430115,
+    "text": "This approach helps convert abstract ethical principles into concrete, time-boxed actions that\ncan be tracked and revisited throughout the sprint cycle. It ensures that responsibility is not just\na post hoc evaluation, but a proactive part of scoping and estimating work. The following\nsections explore how this integration supports transparency, interpretability, and stakeholder\ntrust through novel metrics and communication methods."
+  },
+  {
+    "source": "semantic_query",
+    "category": "agile",
+    "implementation_step": "",
+    "page": 8,
+    "score": 0.45735809206962585,
+    "text": "In this way, ECCOLA serves as a lightweight but structured extension of the RESOLVEDD\nreasoning model, embedding ethical reflection directly into the software development lifecycle\n(SDLC) in a format that scales for both large enterprises and lean startups.\n8"
+  },
+  {
+    "source": "semantic_query",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 10,
+    "score": 0.5279552936553955,
+    "text": "As shown, the Inference Engine (IE) and Product Engine (PE) evolve on separate but\nparallel development tracks, each with its own branching and deployment cadence. For\nexample, Live IE version 1.1 may remain in production while a newer Dev IE v1.2 is\nbeing validated, just as Dev PE v2.2 advances independently of earlier releases. The AI"
+  },
+  {
+    "source": "semantic_query",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 11,
+    "score": 0.4427841305732727,
+    "text": "It\u2019s important to note that changes to the Inference Engine (IE) don\u2019t always involve\nmodifications to input or output formats. The structure of the data pipeline may remain\nconsistent even as the underlying model evolves\u2014through algorithm updates, parameter\ntuning, or other enhancements. The purpose of the diagram is simply to illustrate that, at\nsome point, the IE and Product Engine (PE) must converge during the AI Integration\nphase. However, since IE updates can occur independently of PE deployments, it's\ncritical that any such changes\u2014regardless of how minimal they may appear\u2014still\nundergo the SAFE-AI evaluation process. This ensures that even behind-the-scenes\nmodel improvements are held to the same standards of validation, risk assessment, and\naccountability."
+  },
+  {
+    "source": "semantic_query",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 11,
+    "score": 0.4110236167907715,
+    "text": "This section occurs during the Inference Engine (IE) phase and outlines key steps the data\nscience team - both technical and product stakeholders - should complete before progressing to\ndevelopment and integration. These steps ensure that AI inference engines operate within\ndefined boundaries of uncertainty and acceptable risk, aligning with ethical standards and\nstrategic business goals."
+  },
+  {
+    "source": "semantic_query",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 10,
+    "score": 0.4059372544288635,
+    "text": "As a result, organizations often manage two distinct codebases with different versioning\ncadences. One includes the core functional product code that will be exposed to end\nusers. The other is research-oriented code maintained by the data science\nteam\u2014consisting of modeling notebooks, experimental logic, hypotheses, tuning cycles,\nand visualizations. This research code must undergo thorough validation before being\npromoted. Only when the team agrees that the model meets uncertainty and risk criteria\ndoes it become eligible for integration."
+  },
+  {
+    "source": "semantic_query",
+    "category": "engineering",
+    "implementation_step": "",
+    "page": 10,
+    "score": 0.40445461869239807,
+    "text": "AI Integration (AII): TThis is the convergence point. AI Integration (AII) is where a\nvalidated inference engine is embedded into the product codebase. This integration\ncode is functional in nature: it accepts input, runs the algorithm, and outputs predictions."
+  },
+  {
+    "source": "semantic_query",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 21,
+    "score": 0.582663893699646,
+    "text": "According to the Data Science Alliance (2024), four important types of concerns exist when\nconducting monitoring:\n\u25cf Concept drift: Also known as model drift, this occurs when the patterns or relationships\nestimated by the model shift from their state at deployment. These shifts can manifest\ninstantaneously, gradually, cyclically, or temporarily, potentially compromising the\nmodel's effectiveness.\n\u25cf Data drift: This phenomenon emerges when the distribution of production data\nsignificantly differs from the training data. While the negative impact of data drift on\nmodel performance typically develops slowly, its effects compound over time, leading to\nincreasingly unreliable results.\n\u25cf Data integrity: Production environments may introduce unexpected variables,\nincompatible data types, or inconsistent measurements that differ from the model's\ntraining environment. These integrity issues can severely impact the model's accuracy\nand reliability, requiring immediate attention and correction.\n\u25cf Bias drift: Even a model developed with careful consideration for fairness and bias\nmitigation can become unfair in production due to bias drift. As societies evolve, existing\nbiases may diminish while new ones emerge, requiring continuous monitoring and\nadjustment to maintain ethical performance."
+  },
+  {
+    "source": "semantic_query",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 21,
+    "score": 0.4561247229576111,
+    "text": "Ensuring a smooth deployment process requires clear coordination between the data science\nand software development teams. These discussions should focus on versioning strategies,\nmodel refresh cycles, and seamless integration workflows to maintain system stability while\nenabling continuous improvements."
+  },
+  {
+    "source": "semantic_query",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 21,
+    "score": 0.4483543038368225,
+    "text": "The team will benefit from establishing robust evaluation frameworks to effectively monitor and\naddress these potential drifts. The foundation of this framework relies on the fairness and\ntransparency metrics established during model development, which serve as critical\nbenchmarks for ongoing evaluation. By systematically tracking these metrics and implementing\n21"
+  },
+  {
+    "source": "semantic_query",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 17,
+    "score": 0.4136815667152405,
+    "text": "Once an inference engine has been approved and integrated into a production environment, it is\ncommon practice to revisit the model for improvements through techniques such as retraining\nwith new data, hyperparameter tuning, or feature modifications. While these changes may be\nperceived as incremental or routine, they carry the potential to significantly alter the algorithm\u2019s\nbehavior, calibration, and fairness properties. Even minor updates can reintroduce latent biases,\nshift subgroup performance, or affect the interpretability and reliability of outputs."
+  },
+  {
+    "source": "semantic_query",
+    "category": "monitoring",
+    "implementation_step": "",
+    "page": 21,
+    "score": 0.37243372201919556,
+    "text": "After deployment, system monitoring and evaluation at regular intervals can help ensure the\nprevention of potential harm creation or perpetuation. While initial model results may meet\nresponsibility metrics during development, changes in data patterns or underlying system\ncharacteristics could cause deviations in production performance."
+  },
+  {
+    "source": "implementation_step",
+    "category": "process",
+    "implementation_step": "1_discovery",
+    "page": 8,
+    "score": 0.5216000080108643,
+    "text": "Building on this foundation, Vakkuri et al. (2021) introduced ECCOLA, a card-based toolkit\ntailored to agile AI and autonomous systems development. ECCOLA does not follow an\nacronym, but its sprint-by-sprint format maps well to the RESOLVEDD process. It consists of a\ndeck of 21 cards aligned to 8 core AI ethics themes (e.g., transparency, accountability, bias),\neach designed to provoke discussion, surface risks, and frame decisions during active\ndevelopment. The cards can be used in planning meetings to ensure that ethical issues are not\nonly acknowledged but actively scoped into the project as discrete tasks."
+  },
+  {
+    "source": "implementation_step",
+    "category": "process",
+    "implementation_step": "2_fairness",
+    "page": 13,
+    "score": 0.7392135262489319,
+    "text": "In practice, fairness metrics are used to detect and mitigate disparate impacts\u2014ensuring\nthat one group or class (e.g., based on race, gender, age, or geography) is not\ndisproportionately harmed or excluded compared to others. This may involve evaluating\nperformance across subgroups, measuring disparities in false positives or negatives, or\nassessing equal access to beneficial outcomes. The goal is not only to identify statistical\nimbalance, but to actively choose metrics that reflect the ethical priorities and risk\ntolerances of the system\u2019s intended users and affected populations."
+  },
+  {
+    "source": "implementation_step",
+    "category": "process",
+    "implementation_step": "3_transparency",
+    "page": 23,
+    "score": 0.33348873257637024,
+    "text": "SAFE-AI further distinguishes itself by introducing the scenario-based analogies SPAMM as an\napproach to communicating the ethical risks associated with AI models.Traditional\ninterpretability tools, such as SHAP and LIME, focus on explaining the internal mechanics of\nmodels in highly technical terms. While valuable, these tools often fail to communicate the\npractical implications of model behavior to non-technical stakeholders, such as business\nleaders, clinicians, or regulatory bodies. This method addresses this gap by mapping model\noutputs to real-world scenarios, probabilities, and cost-based analogies that can be easily\nunderstood by multidisciplinary teams. This method facilitates more transparent discussions\nabout risk, ethical trade-offs, and decision-making costs, making it easier for organizations to\nweigh these factors against business priorities."
+  },
+  {
+    "source": "implementation_step",
+    "category": "process",
+    "implementation_step": "4_engineering",
+    "page": 11,
+    "score": 0.5178420543670654,
+    "text": "It\u2019s important to note that changes to the Inference Engine (IE) don\u2019t always involve\nmodifications to input or output formats. The structure of the data pipeline may remain\nconsistent even as the underlying model evolves\u2014through algorithm updates, parameter\ntuning, or other enhancements. The purpose of the diagram is simply to illustrate that, at\nsome point, the IE and Product Engine (PE) must converge during the AI Integration\nphase. However, since IE updates can occur independently of PE deployments, it's\ncritical that any such changes\u2014regardless of how minimal they may appear\u2014still\nundergo the SAFE-AI evaluation process. This ensures that even behind-the-scenes\nmodel improvements are held to the same standards of validation, risk assessment, and\naccountability."
+  },
+  {
+    "source": "implementation_step",
+    "category": "process",
+    "implementation_step": "5_monitoring",
+    "page": 21,
+    "score": 0.5509395003318787,
+    "text": "According to the Data Science Alliance (2024), four important types of concerns exist when\nconducting monitoring:\n\u25cf Concept drift: Also known as model drift, this occurs when the patterns or relationships\nestimated by the model shift from their state at deployment. These shifts can manifest\ninstantaneously, gradually, cyclically, or temporarily, potentially compromising the\nmodel's effectiveness.\n\u25cf Data drift: This phenomenon emerges when the distribution of production data\nsignificantly differs from the training data. While the negative impact of data drift on\nmodel performance typically develops slowly, its effects compound over time, leading to\nincreasingly unreliable results.\n\u25cf Data integrity: Production environments may introduce unexpected variables,\nincompatible data types, or inconsistent measurements that differ from the model's\ntraining environment. These integrity issues can severely impact the model's accuracy\nand reliability, requiring immediate attention and correction.\n\u25cf Bias drift: Even a model developed with careful consideration for fairness and bias\nmitigation can become unfair in production due to bias drift. As societies evolve, existing\nbiases may diminish while new ones emerge, requiring continuous monitoring and\nadjustment to maintain ethical performance."
+  }
+]
