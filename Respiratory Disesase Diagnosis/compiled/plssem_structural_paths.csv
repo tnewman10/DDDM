@@ -1,0 +1,4 @@
+lval,rval,Est. Std,op
+BloodStress,BodStress,-0.003726417582519563,~
+BloodStress,SevGrp,-0.05716604686579633,~
+BodStress,SevGrp,0.006012497224021484,~

@@ -1,0 +1,7 @@
+Predictor,Outcome,PLS_Estimate,PLS_P_value
+CircStress,BloodStress,0.020084288722895614,0.608
+CircStress,BodStress,0.0780758118997127,0.064
+CircStress,SevGrp,0.009271812729156457,0.648
+BloodStress,BodStress,-0.003726417582519563,0.968
+BloodStress,SevGrp,-0.05716604686579633,0.24
+BodStress,SevGrp,0.006012497224021484,0.872
