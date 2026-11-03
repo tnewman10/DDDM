@@ -1,0 +1,11 @@
+rank,lift,matching_rows,dosing_rule,support_rule_set,support_condition
+1,38.8205,1,Antibiotic: Erythromycin · Route: PO · Age: ≤ 11 years · Weight-based dose: 40–60 mg/kg/day,0.00033,0.02576
+2,38.8205,1,Antibiotic: Linezolid · Route: IV · Age: 12–120 years · Fixed daily dose: 800–1200 mg/day,0.00033,0.02576
+3,38.8205,1,Antibiotic: Linezolid · Route: PO · Age: 12–120 years · Fixed daily dose: 800–1200 mg/day,0.00033,0.02576
+4,38.8205,1,Antibiotic: Meropenem · Route: IV · Age: 12–120 years · Fixed daily dose: 1500–2000 mg/day,0.00033,0.02576
+5,38.8205,1,Antibiotic: Meropenem · Route: IV · Age: ≤ 11 years · Weight-based dose: 30–40 mg/kg/day · Max daily dose: 1500 mg,0.00033,0.02576
+6,19.4103,1,Antibiotic: Azithromycin · Route: PO · Age: ≤ 11 years · Weight: ≤ 44.5 kg · Weight-based dose: 5–10 mg/kg/day,0.00066,0.02576
+7,19.4103,1,Antibiotic: Azithromycin · Route: PO · Age: ≤ 11 years · Weight: ≥ 44.6 kg · Fixed daily dose: 250–500 mg/day,0.00066,0.02576
+8,19.4103,1,Antibiotic: Clarithromycin · Route: PO · Age: 12–120 years · Fixed daily dose: 500–750 mg/day,0.00066,0.02576
+9,19.4103,1,Antibiotic: Erythromycin · Route: PO · Age: 12–120 years · Fixed daily dose: 500–750 mg/day,0.00066,0.02576
+10,19.4103,1,Antibiotic: Levofloxacin · Route: PO · Age: 12–120 years · Fixed daily dose: 500–750 mg/day,0.00066,0.02576

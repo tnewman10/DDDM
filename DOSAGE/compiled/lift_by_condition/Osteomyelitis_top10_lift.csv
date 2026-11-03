@@ -1,0 +1,11 @@
+rank,lift,matching_rows,dosing_rule,support_rule_set,support_condition
+1,32.913,1,Antibiotic: Cefadroxil · Route: PO · Age: 18–120 years · Fixed daily dose: 1000–2000 mg/day,0.00033,0.03038
+2,32.913,1,Antibiotic: Dicloxacillin · Route: PO · Age: 1–11 years · Weight: ≤ 39.5 kg · Weight-based dose: 50–100 mg/kg/day · Max daily dose: 2000 mg,0.00033,0.03038
+3,32.913,1,Antibiotic: Fusidic Acid · Route: PO · Age: 1–11 years · Weight-based dose: 20–26.67 mg/kg/day,0.00033,0.03038
+4,16.4565,1,Antibiotic: Cefuroxime · Route: IM · Age: 13–120 years · Fixed daily dose: 4500–6000 mg/day,0.00066,0.03038
+5,16.4565,1,Antibiotic: Cefuroxime · Route: IM · Age: ≤ 11 years · Weight-based dose: 150–200 mg/kg/day · Max daily dose: 4500 mg,0.00066,0.03038
+6,16.4565,1,Antibiotic: Cefuroxime · Route: IV · Age: ≤ 11 years · Weight-based dose: 150–200 mg/kg/day · Max daily dose: 4500 mg,0.00066,0.03038
+7,16.4565,1,Antibiotic: Cefuroxime + Clavulanic Acid · Route: IM · Age: 13–120 years · Fixed daily dose: 4500–6000 mg/day,0.00066,0.03038
+8,16.4565,1,Antibiotic: Cefuroxime + Clavulanic Acid · Route: IM · Age: ≤ 11 years · Weight-based dose: 150–200 mg/kg/day · Max daily dose: 4500 mg,0.00066,0.03038
+9,16.4565,1,Antibiotic: Cefuroxime + Clavulanic Acid · Route: IV · Age: ≤ 11 years · Weight-based dose: 150–200 mg/kg/day · Max daily dose: 4500 mg,0.00066,0.03038
+10,16.4565,1,Antibiotic: Flucloxacillin · Route: IM · Age: 2–11 years · Fixed daily dose: 500–4000 mg/day,0.00066,0.03038

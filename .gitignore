@@ -33,6 +33,9 @@ credentials.json
 patch_*.py
 _*.py
 
+# CatBoost training artifacts
+**/catboost_info/
+
 # IDE
 .idea/
 .vscode/

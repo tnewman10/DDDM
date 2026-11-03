@@ -1,0 +1,11 @@
+rank,lift,matching_rows,dosing_rule,support_rule_set,support_condition
+1,48.0635,1,Antibiotic: Cefoperazone · Route: IM · Age: 18–120 years · Fixed daily dose: 4000–6000 mg/day,0.00033,0.02081
+2,48.0635,1,Antibiotic: Cefoperazone · Route: IV · Age: 18–120 years · Fixed daily dose: 4000–6000 mg/day,0.00033,0.02081
+3,48.0635,1,Antibiotic: Gentamicin · Route: IM · Age: 12–120 years · Weight-based dose: 3–4 mg/kg/day,0.00033,0.02081
+4,48.0635,1,Antibiotic: Gentamicin · Route: IV · Age: 12–120 years · Weight-based dose: 3–4 mg/kg/day,0.00033,0.02081
+5,48.0635,1,Antibiotic: Vancomycin · Route: IV · Age: 1–29 days · Weight-based dose: ≤ 30 mg/kg/day,0.00033,0.02081
+6,48.0635,1,Antibiotic: Vancomycin · Route: PO · Age: 1–29 days · Weight-based dose: ≤ 30 mg/kg/day,0.00033,0.02081
+7,24.0317,1,Antibiotic: Aztreonam · Route: IV · Age: 18–120 years · Fixed daily dose: 6000–8000 mg/day,0.00066,0.02081
+8,16.0212,1,Antibiotic: Cefepime · Route: IV · Age: 1–29 days · Weight-based dose: 60–90 mg/kg/day,0.00099,0.02081
+9,12.0159,1,Antibiotic: Cefepime · Route: IV · Age: 12–120 years · Fixed daily dose: 2000–6000 mg/day,0.00132,0.02081
+10,12.0159,1,Antibiotic: Erythromycin · Route: PO · Age: 12–120 years · Fixed daily dose: 1000–2000 mg/day,0.00132,0.02081

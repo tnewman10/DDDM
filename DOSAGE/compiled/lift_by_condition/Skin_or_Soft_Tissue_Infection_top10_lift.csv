@@ -1,0 +1,11 @@
+rank,lift,matching_rows,dosing_rule,support_rule_set,support_condition
+1,26.5614,1,Antibiotic: Ampicillin · Route: IM · Age: 12–120 years · Weight: ≥ 39.6 kg · Fixed daily dose: 1000–2000 mg/day,0.00033,0.03765
+2,26.5614,1,Antibiotic: Ampicillin · Route: IV · Age: 12–120 years · Weight: ≥ 39.6 kg · Fixed daily dose: 1000–2000 mg/day,0.00033,0.03765
+3,26.5614,1,Antibiotic: Cefprozil · Route: PO · Age: ≤ 11 years · Weight-based dose: 20–40 mg/kg/day · Max daily dose: 1000 mg,0.00033,0.03765
+4,26.5614,1,Antibiotic: Cephalexin · Route: PO · Age: ≤ 11 years · Weight-based dose: 25–50 mg/kg/day,0.00033,0.03765
+5,26.5614,1,Antibiotic: Dicloxacillin · Route: PO · Age: 1–11 years · Weight: ≤ 39.5 kg · Fixed daily dose: 500–1000 mg/day,0.00033,0.03765
+6,26.5614,1,Antibiotic: Fusidic Acid · Route: IM · Age: 1–11 years · Weight-based dose: 20–26.67 mg/kg/day,0.00033,0.03765
+7,26.5614,1,Antibiotic: Fusidic Acid · Route: IV · Age: 1–11 years · Weight-based dose: 20–26.67 mg/kg/day,0.00033,0.03765
+8,13.2807,1,Antibiotic: Cefadroxil · Route: PO · Age: 12–120 years · Fixed daily dose: 750–1000 mg/day,0.00066,0.03765
+9,13.2807,1,Antibiotic: Cefditoren · Route: PO · Age: 12–120 years · Fixed daily dose: 400–800 mg/day,0.00066,0.03765
+10,13.2807,1,Antibiotic: Cefpodoxime · Route: PO · Age: 12–120 years · Fixed daily dose: 800–1200 mg/day,0.00066,0.03765

@@ -1,0 +1,11 @@
+rank,lift,matching_rows,dosing_rule,support_rule_set,support_condition
+1,35.2093,1,Antibiotic: Aztreonam · Route: IV · Age: ≤ 18 years · Weight-based dose: 90–120 mg/kg/day · Max daily dose: 8000 mg,0.00033,0.0284
+2,35.2093,1,Antibiotic: Cefuroxime · Route: IV · Age: ≤ 11 years · Weight-based dose: 150–200 mg/kg/day,0.00033,0.0284
+3,35.2093,1,Antibiotic: Cefuroxime + Clavulanic Acid · Route: IV · Age: ≤ 11 years · Weight-based dose: 150–200 mg/kg/day,0.00033,0.0284
+4,35.2093,1,Antibiotic: Meropenem · Route: IV · Age: ≤ 11 years · Weight-based dose: 60–80 mg/kg/day · Max daily dose: 3000 mg,0.00033,0.0284
+5,35.2093,1,Antibiotic: Metronidazole · Route: IV · Age: ≤ 11 years · Weight-based dose: 30–40 mg/kg/day,0.00033,0.0284
+6,35.2093,1,Antibiotic: Tigecycline · Route: IV · Age: 8–11 years · Weight-based dose: 2.4–3.6 mg/kg/day · Max daily dose: 100 mg,0.00033,0.0284
+7,17.6047,1,Antibiotic: Meropenem · Route: IV · Age: 12–120 years · Fixed daily dose: 3000–4000 mg/day,0.00066,0.0284
+8,11.7364,1,Antibiotic: Doripenem · Route: IV · Age: 18–120 years · Fixed daily dose: 1500–2000 mg/day,0.00099,0.0284
+9,8.8023,1,Antibiotic: Ampicillin · Route: IM · Age: ≤ 11 years · Weight: ≥ 39.6 kg · Fixed daily dose: 2000–2500 mg/day,0.00132,0.0284
+10,8.8023,1,Antibiotic: Ampicillin · Route: IV · Age: ≤ 11 years · Weight: ≥ 39.6 kg · Fixed daily dose: 2000–2500 mg/day,0.00132,0.0284

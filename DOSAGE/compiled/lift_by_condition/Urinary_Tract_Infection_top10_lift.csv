@@ -1,0 +1,11 @@
+rank,lift,matching_rows,dosing_rule,support_rule_set,support_condition
+1,21.1748,1,Antibiotic: Aztreonam · Route: IV · Age: 18–120 years · Fixed daily dose: 1000–3000 mg/day,0.00033,0.04723
+2,21.1748,1,Antibiotic: Cefazolin · Route: IM · Age: 12–120 years · Fixed daily dose: 2000–3000 mg/day,0.00033,0.04723
+3,21.1748,1,Antibiotic: Cefazolin · Route: IV · Age: 12–120 years · Fixed daily dose: 2000–3000 mg/day,0.00033,0.04723
+4,21.1748,1,Antibiotic: Ciprofloxacin · Route: IV · Age: 12–120 years · Fixed daily dose: 400–1200 mg/day,0.00033,0.04723
+5,21.1748,1,Antibiotic: Ciprofloxacin Hydrochloride · Route: IV · Age: 12–120 years · Fixed daily dose: 400–1200 mg/day,0.00033,0.04723
+6,21.1748,1,Antibiotic: Fosfomycin · Route: IV · Age: 12–120 years · Fixed daily dose: 12000–16000 mg/day,0.00033,0.04723
+7,21.1748,1,Antibiotic: Levofloxacin · Route: IV · Age: 12–120 years · Fixed daily dose: 250–750 mg/day,0.00033,0.04723
+8,21.1748,1,Antibiotic: Levofloxacin · Route: PO · Age: 12–120 years · Fixed daily dose: 250–750 mg/day,0.00033,0.04723
+9,21.1748,1,Antibiotic: Nalidixic Acid · Route: PO · Age: 12–120 years · Fixed daily dose: 2000–4000 mg/day,0.00033,0.04723
+10,21.1748,1,Antibiotic: Nalidixic Acid · Route: PO · Age: ≤ 11 years · Weight-based dose: 33–55 mg/kg/day · Max daily dose: 4000 mg,0.00033,0.04723
