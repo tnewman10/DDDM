@@ -1,0 +1,11 @@
+rank,confidence,matching_rows,dosing_rule,support_condition
+1,0.01282,1,Antibiotic: Amoxicillin · Route: PO · Age: 12–120 years · Fixed daily dose: 750–1500 mg/day,0.02576
+2,0.01282,1,Antibiotic: Amoxicillin  + Clavulanic Acid · Route: PO · Age: 1–3 months · Weight-based dose: 30–45 mg/kg/day,0.02576
+3,0.01282,1,Antibiotic: Amoxicillin  + Clavulanic Acid · Route: PO · Age: ≤ 11 years · Weight-based dose: 20–45 mg/kg/day,0.02576
+4,0.01282,1,Antibiotic: Amoxicillin  + Clavulanic Acid · Route: PO · Age: ≤ 11 years · Fixed daily dose: 750–1750 mg/day,0.02576
+5,0.01282,1,Antibiotic: Azithromycin · Route: PO · Age: 12–120 years · Fixed daily dose: 250–500 mg/day,0.02576
+6,0.01282,1,Antibiotic: Azithromycin · Route: PO · Age: ≤ 11 years · Weight: ≤ 44.5 kg · Weight-based dose: 5–10 mg/kg/day,0.02576
+7,0.01282,1,Antibiotic: Azithromycin · Route: PO · Age: ≤ 11 years · Weight: ≥ 44.6 kg · Fixed daily dose: 250–500 mg/day,0.02576
+8,0.01282,1,Antibiotic: Aztreonam · Route: IV · Age: 1–7 days · Weight: ≥ 2.1 kg · Weight-based dose: 90–120 mg/kg/day,0.02576
+9,0.01282,1,Antibiotic: Aztreonam · Route: IV · Age: 8–29 days · Weight: ≥ 2.1 kg · Weight-based dose: 120–150 mg/kg/day,0.02576
+10,0.01282,1,Antibiotic: Aztreonam · Route: IV · Age: 8–29 days · Weight: ≤ 1.19 kg · Weight-based dose: 60–90 mg/kg/day,0.02576

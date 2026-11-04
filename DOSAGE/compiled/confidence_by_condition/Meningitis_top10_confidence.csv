@@ -1,0 +1,11 @@
+rank,confidence,matching_rows,dosing_rule,support_condition
+1,0.01389,1,Antibiotic: Amikacin · Route: IM · Age: 12–65 years · Weight-based dose: 10–15 mg/kg/day · Max daily dose: 1500 mg,0.02378
+2,0.01389,1,Antibiotic: Amikacin · Route: IV · Age: 12–65 years · Weight-based dose: 10–15 mg/kg/day · Max daily dose: 1500 mg,0.02378
+3,0.01389,1,Antibiotic: Amikacin · Route: IM · Age: ≤ 11 years · Weight-based dose: 10–15 mg/kg/day · Max daily dose: 1500 mg,0.02378
+4,0.01389,1,Antibiotic: Amikacin · Route: IV · Age: ≤ 11 years · Weight-based dose: 10–15 mg/kg/day · Max daily dose: 1500 mg,0.02378
+5,0.01389,1,Antibiotic: Ampicillin · Route: IM · Age: 12–120 years · Weight-based dose: 150–200 mg/kg/day · Max daily dose: 12000 mg,0.02378
+6,0.01389,1,Antibiotic: Ampicillin · Route: IV · Age: 12–120 years · Weight-based dose: 150–200 mg/kg/day · Max daily dose: 12000 mg,0.02378
+7,0.01389,1,Antibiotic: Ampicillin · Route: IM · Age: ≤ 11 years · Weight-based dose: 150–400 mg/kg/day · Max daily dose: 12000 mg,0.02378
+8,0.01389,1,Antibiotic: Ampicillin · Route: IM · Age: 1–7 days · Weight-based dose: 100–150 mg/kg/day,0.02378
+9,0.01389,1,Antibiotic: Ampicillin · Route: IM · Age: 8–29 days · Weight-based dose: 150–200 mg/kg/day,0.02378
+10,0.01389,1,Antibiotic: Ampicillin · Route: IV · Age: ≤ 11 years · Weight-based dose: 150–400 mg/kg/day · Max daily dose: 12000 mg,0.02378
